@@ -3351,9 +3351,7 @@ ad_urls[1:5]</pre>
 <li><p>404 errors:</p></li>
 </ul>
 
-<pre class = 'prettyprint lang-r'>library(curl)
-tryCatch(read_html(curl(url, 
-             handle = curl::new_handle(&quot;useragent&quot; = &quot;Mozilla/5.0&quot;))), 
+<pre class = 'prettyprint lang-r'>tryCatch(read_html(url), 
            error = function(e){NA})</pre>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  class="flexbox vcenter" id="section">
