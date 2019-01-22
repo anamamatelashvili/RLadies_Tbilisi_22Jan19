@@ -194,9 +194,7 @@ scrape_hrge <- function(x){
 - 404 errors:
 
 ```{r eval=FALSE}
-library(curl)
-tryCatch(read_html(curl(url, 
-             handle = curl::new_handle("useragent" = "Mozilla/5.0"))), 
+tryCatch(read_html(url), 
            error = function(e){NA})
 ```
 
