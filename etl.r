@@ -121,5 +121,3 @@ df <- map_df(ad_urls, scrape_hrge)
 
 write.csv(df, file = 'scraped_data.csv')
 write_xlsx(df, path = 'scraped_data.xlsx', col_names = TRUE)
-
-
