@@ -200,6 +200,7 @@ tryCatch(read_html(curl(url,
            error = function(e){NA})
 ```
 
+
 ## {.flexbox .vcenter}
 
 <div class="centered">
